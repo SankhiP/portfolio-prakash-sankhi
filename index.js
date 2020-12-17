@@ -28,7 +28,9 @@ app.get('/education', (req, res) => {
 
 
 
-app.set(port);
+app.listen(port, () => {
+    console.log("Listining on port : 3000");
+});
 
 // app.listen(process.env.port || 3000, () => {
 //     console.log("Listening on port: 3000");
