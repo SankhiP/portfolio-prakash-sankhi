@@ -23,6 +23,7 @@ body {
 }
 
 
+
 .logo {
     height: 40px;
     width: 70px;
@@ -30,7 +31,11 @@ body {
     margin: 5px;
     padding: 5px;
 }
+/*Navbar sections*/
 
+.sec {
+color: white;
+}
 /* About me profile text and image */
 #profile-image {
     height: 300px;
@@ -108,6 +113,48 @@ body {
     margin: 15px;
     padding: 15px;
 }
+
+
+/*Skills Setion*/
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin:30px;
+    padding:10px;
+}
+
+.progress {
+    background-color:none;
+}
+
+.roll {
+    color:seagreen;
+}
+
+.pull-right {
+    color:black;
+}
+
+
+/*Experience Sections*/
+
+.card-img-top{
+    height:220px;
+    width:290px;
+    padding:5px;
+    
+}
+
+.card{
+    height:330px;
+    width:300px;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 20px;
+    color:white;
+    background-color: lightgreen;
+}
 /* education  */
 .table {
     border: 3px solid #ddd;
@@ -118,7 +165,7 @@ body {
  
 
 .footer {
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
