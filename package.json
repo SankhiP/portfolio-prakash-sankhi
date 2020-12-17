@@ -15,6 +15,6 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "serve": "^10.0.1"
+    "serve": "^10.1.2"
   }
 }
