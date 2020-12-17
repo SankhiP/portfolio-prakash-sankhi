@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const PORT = process.env.PORT || '8080'
 const app = express();
 
 const port = process.env.port;
@@ -26,7 +27,9 @@ app.get('/education', (req, res) => {
     res.render('education.ejs');
 })
 
-app.listen(port);
+
+
+app.set("port", PORT);
 
 // app.listen(process.env.port || 3000, () => {
 //     console.log("Listening on port: 3000");
