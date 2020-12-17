@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const PORT = process.env.PORT || '8080'
+const port = process.env.PORT || 3000;
 const app = express();
 
 
@@ -28,7 +28,7 @@ app.get('/education', (req, res) => {
 
 
 
-app.set("port", PORT);
+app.set(port);
 
 // app.listen(process.env.port || 3000, () => {
 //     console.log("Listening on port: 3000");
