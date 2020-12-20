@@ -1,177 +1,192 @@
 
-* {
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    line-height: 1.9;
+    
+}
+
+/*Global */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+ul {
     margin: 0;
     padding: 0;
 }
 
-h1,
-p, b {
-    font-family: 'Open Sans', sans-serif;
+/* Header */
+header {
+
+    padding-top:30px;
+    min-height: 70px;
+    text-align: center;
 }
 
-html,
-body {
-    height: 100%;
-}
-
-.container {
-    height: 100%;
-}
-
-#main {
-    overflow: auto;
-}
-
-
-
-.logo {
-    height: 40px;
-    width: 70px;
-    display: inline;
-    margin: 5px;
-    padding: 5px;
-}
-/*Navbar sections*/
-
-.sec {
-color: white;
-}
-/* About me profile text and image */
-#profile-image {
-    height: 300px;
-    width: 500px;
-    border-radius: 50%;
-    margin: 10px;
-    margin-top: 30px;
-    border: 1px solid #ddd;
-    padding:5px;
-}
-
-#profile-image:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-
-.main-text{
-    height:500px;
-    width:700px;
-    margin:10px;
-    padding: 25px;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-shrink: 3;
-}
-
-@media (min-width:300px) and (max-width:600px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 135%;
-     }
-     .main-text{
-        height:400px;
-        width:450px;
-        font: small;
-        margin: 10px;
-        padding: 0;
-    }
-
+header a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
     
-    #profile-image {
-        height: 350px;
-        width: 400px;
-        border-radius: 50%;
-        margin: auto;
-        margin-bottom: 30px;
-        border: 1px solid #ddd;
-        padding:0;
-    }
 }
 
-.main-skills-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 15px;
-    padding: 15px;
+header li{
+    display : inline;
+    padding : 0 20px 20px 0;
 }
 
-.skill-logo {
-    height: 100px;
-    width: 100px;
+.active {
+    background: red;
+}
+
+
+/* header ul li.active a {
+    background : red;
+    color :white;
+} */
+
+.topnav {
+    margin-bottom: 10px;
+}
+
+/* About Me */
+
+#about {
+
+    width: 80%;
+    background-image: url("https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-9/p843x403/35238958_2038784109526715_6404103770879295488_o.jpg?_nc_cat=100&ccb=2&_nc_sid=84a396&_nc_ohc=MlXE9P6KT6wAX_Kl1Bk&_nc_oc=AQnNIxXXLQUmsUwYiudcFJC0snqRyi2Ft4JmkJbd9TP06hv9ectO6GGD1hieob_F7-c&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=7a9b8a60041be0e0091448013b6a7350&oe=5FFD1849") ;
+    background-repeat: no-repeat;
+    margin : 80px;
+    height : 500px;
+    border-radius: 50%;
+}
+
+article {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+
+article h2 {
+    margin-top: 300px;
+}
+
+
+#about-inside {
+ display: inline;
+ margin-top : 30px;
+}
+
+#about-feed{
     display: inline-block;
-    margin: 5px;
-    padding: 5px;
+    margin-top: 100px;
 }
 
-.skill-logo-basics {
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    padding: 15px;
+.about-feed-img{
+    width: 400px;
+    height: 400px;
+    margin:0;
+    padding: 0;
+}
+#kings-road {
+    width : 40%;
+    margin-top: 150px;
+    float: left;
+    
 }
 
-
-/*Skills Setion*/
-
-.main {
-    height: 100%;
-    width: 100%;
-    margin:30px;
-    padding:10px;
+#kings-road-aside {
+    width : 50%;
+    float: right;
+    margin-top: 200px;
+    
+    
+}
+.container p {
+    margin-top: 15px;
 }
 
-.progress {
-    background-color:none;
+span #right{
+    float: right;
+}
+/*Skills Sections */
+
+.quotes {
+    margin-top : 200px;
+    text-align: center;
 }
 
-.roll {
-    color:seagreen;
+#skill-services {
+    margin-top: 200px;
+    text-align: center;
 }
-
-.pull-right {
-    color:black;
-}
-
-
 /*Experience Sections*/
 
-.card-img-top{
+.main {
+    margin: 60px;
+}
+
+#experience-text {
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+ .card-img-top{
     height:220px;
     width:290px;
     padding:5px;
-    
-}
 
-.card{
+} 
+
+ .card{
     height:330px;
     width:300px;
     border: 3px solid black;
     display: inline-block;
     margin: 20px;
     color:white;
-    background-color: lightgreen;
+} 
+
+.img-services {
+    height: 250px;
+    width: 300px;
+    margin: 10px;
 }
-/* education  */
-.table {
-    border: 3px solid #ddd;
+
+#div-services {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: 50px;
     
 }
 
-/* footer social media icon */
- 
+/*Footer*/
 
-.footer {
-    height: 35%;
+footer {
+    width: 100%;
+    margin-top: 200px;
+    padding: 50px;
+    background-color:skyblue;
+    position: relative;
+    text-align: center;
+
+}
+
+#contact {
+    margin-top:80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 1;
-    position: relative;
-
 }
 
 .fa {
@@ -181,7 +196,6 @@ color: white;
     width: 60px;
     text-align: center;
     text-decoration: none;
-    background-color: burlywood;
     margin: 5px;
     padding: 5px;
     color:white;
@@ -203,14 +217,15 @@ height : 40px;
     margin: 3px;
     margin-top:60px;
     padding: 3px;
-    text-align: center; 
-    justify-content: center;   
+    text-align: center;
+    justify-content: center;
 }
 
 .contact-left {
     display: flex;
     flex-direction: column;
-    margin-top:40px;
+    text-align: left;
+    margin-top: 40px;
 }
 .contact-right {
     display: flex;
@@ -219,13 +234,102 @@ height : 40px;
     padding: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (min-width:300px) and (max-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 135%;
+     }
+    
+.main-skills-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 15px;
+}
+
+.skill-logo {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.skill-logo-basics {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+} */
+
+
+/*Skills Setion*/
+
+/* .main {
+    height: 100%;
+    width: 100%;
+    margin:30px;
+    padding:10px;
+} */
+
+
+
+/* footer social media icon */
+
+
 @media (min-width:300px) and (max-width:600px) {
     .footer {
         display: flex;
         flex-direction: column;
-        height: 67%
+        height: 67%;
     }
- 
+
     .contact-left,.contact-middle,.contact-right {
       margin :auto;
   }
@@ -233,7 +337,7 @@ height : 40px;
   .main {
     height: 100%;
     margin:0;
-    padding: 0; 
+    padding: 0;
     }
 
   .table {
@@ -243,4 +347,4 @@ height : 40px;
       padding:0;
       font: x-small;
       }
-    }
+    } 

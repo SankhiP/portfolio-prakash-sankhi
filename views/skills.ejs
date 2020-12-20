@@ -1,70 +1,99 @@
 <%-include ('../partials/navbar.ejs') %>
     <div class="container">
         <div class="main">
-            <p><b>Skill </b></p>
-            <div class="row">
-                <div class="col">
-                    <span><b>HTML5 </b></span> <span class="pull-right"> <b>85%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>CSS3</b></span> <span class="pull-right"><b>75%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>Javascript</b></span> <span class="pull-right"><b>90%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>MongoDB</b></span> <span class="pull-right"> <b>60%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>Express</b></span> <span class="pull-right"> <b>80%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>React</b></span> <span class="pull-right"> <b>40%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>Node</b></span> <span class="pull-right"> <b>70%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>Linux-ubuntu</b></span> <span class="pull-right"> <b>60%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>GIT</b></span> <span class="pull-right"> <b>50%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span><b>VS code editor</b></span> <span class="pull-right"> <b>70%</b></span>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+            <div id="Chart-board">
+                <div class="row">
+                    <div class="col">
+                        <span><b>HTML5 </b></span> <span class="pull-right"> <b>85%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>CSS3</b></span> <span class="pull-right"><b>75%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>Javascript</b></span> <span class="pull-right"><b>90%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>MongoDB</b></span> <span class="pull-right"> <b>60%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>Express</b></span> <span class="pull-right"> <b>80%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>React</b></span> <span class="pull-right"> <b>40%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>Node</b></span> <span class="pull-right"> <b>70%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>Linux-ubuntu</b></span> <span class="pull-right"> <b>60%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>GIT</b></span> <span class="pull-right"> <b>50%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span><b>VS code editor</b></span> <span class="pull-right"> <b>70%</b></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
 
-
-
-
-
-
-
-
+                    </div>
                 </div>
             </div>
+
+            <article class="quotes">
+                <h1>"It can be hard to put code into words. But that's my job."</h1>
+            </article>
+            <section id="skill-services">
+                <h1> Services </h1>
+                <div id="div-services">
+                    <div>
+
+                        <img class="img-services"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtbrQBh0H_iFp-BjugIlcs1nca08xSZ7vag&usqp=CAU"
+                            alt="Web Design">
+                        <h3>Design</h3>
+
+                    </div>
+
+                    <div>
+
+                        <img class="img-services"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQgkIpVItk0WfHAsDCsS4oElgekeB_0qyzA&usqp=CAU"
+                            alt="Web developer">
+                        <h3>Develope </h3>
+                    </div>
+                    <div>
+
+                        <img class="img-services"
+                            src="data:image/png;base64,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"
+                            alt="Web hosting Image">
+                        <h3>Host </h3>
+                    </div>
+
+                </div>
+            </section>
         </div>
     </div>
+
+
 
     <%-include ('../partials/footer.ejs') %>
