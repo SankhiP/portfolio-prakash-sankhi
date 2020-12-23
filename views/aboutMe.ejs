@@ -1,29 +1,55 @@
 <%- include ('../partials/navbar.ejs') %>
+    <header>
+        <div class="container">
+            <nav class="topnav">
+                <ul>
+                    <a class="btn active" href="/">About Me</a>
+                    <a class="btn" href="/skills">Skills</a>
+                    <a class="btn" href="/experiences">Experiences</a>
+                    <a class="btn" href="/education">Education</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
     <div class="container">
-        <div id="about">
-            <article>
+        <div class="about-head">
 
-            </article>
+            <div>
+                <section>
+                    <img id="about-Img"
+                        src="https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-9/p843x403/35238958_2038784109526715_6404103770879295488_o.jpg?_nc_cat=100&ccb=2&_nc_sid=84a396&_nc_ohc=MlXE9P6KT6wAX_Kl1Bk&_nc_oc=AQnNIxXXLQUmsUwYiudcFJC0snqRyi2Ft4JmkJbd9TP06hv9ectO6GGD1hieob_F7-c&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=7a9b8a60041be0e0091448013b6a7350&oe=5FFD1849"
+                        alt="prakash Sankhi img">
+
+                </section>
+                <aside id="about-text">
+                    <h2> Hello..</h2>
+                    <h2> I'm Prakash.. </h2>
+                    <h3> I'm Software Engineer and Researcher.</h3>
+                </aside>
+            </div>
+
+
+            <div id="about-inside">
+                <section>
+                    <img id="kings-road"
+                        src="https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-0/p526x296/93839079_3700926929979083_4473383450111377408_o.jpg?_nc_cat=110&ccb=2&_nc_sid=84a396&_nc_ohc=wM5LfdsTp4sAX-PS-Ob&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=5fc405a725dfd7b003fcff2f978ab272&oe=6003CED0"
+                        alt="Kings Road image Oslo">
+                </section>
+
+                <aside id="kings-road-aside">
+
+                    <h1> Overview </h1>
+                    <p>Achieve a position that challenges my skills and urges me to learn and enhance my capabilities to
+                        become more competent and experienced so that I can contribute well to the growth of the company
+                        and
+                        have continuous self-development by way of learning and exposure to new assignments.
+                    </p>
+                </aside>
+            </div>
         </div>
 
-        <div id="about-inside">
-            <section>
-                <img id="kings-road"
-                    src="https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-0/p526x296/93839079_3700926929979083_4473383450111377408_o.jpg?_nc_cat=110&ccb=2&_nc_sid=84a396&_nc_ohc=wM5LfdsTp4sAX-PS-Ob&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=5fc405a725dfd7b003fcff2f978ab272&oe=6003CED0"
-                    alt="Kings Road image Oslo">
-            </section>
-
-            <aside id="kings-road-aside">
-
-                <h2> Overview </h2>
-                <p>I am outgoing, energizing, resourceful, and goal-oriented. I face new challenges with a
-                    great commitment and a willingness to seek the knowledge needed to find solutions. As your next
-                    <b> Full Stack Software Engineer</b>, I want to contribute to new ideas and work purposefully to
-                    contribute to the mission.
-                    <b> I hope to introduce myself further.</b>
-                </p>
-            </aside>
-        </div>
     </div>
 
     <div id="about-feed">
@@ -34,10 +60,6 @@
         <img class="about-feed-img"
             src="https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-0/s640x640/49380194_2434719463266509_8352124799736086528_o.jpg?_nc_cat=109&ccb=2&_nc_sid=84a396&_nc_ohc=3kzuiHuHSgAAX-ahoSN&_nc_ht=scontent.fosl4-2.fna&tp=7&oh=708a1312aca03ce080f2972e72dfae68&oe=60043749"
             alt=" time squate new york city ">
-
-        <!-- <img class="about-feed-img"
-            src="https://scontent.fosl4-1.fna.fbcdn.net/v/t1.0-9/69388164_2988657894539327_7562163220308295680_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=annc_vVliyQAX8sUDCp&_nc_ht=scontent.fosl4-1.fna&oh=91f37f701ad1b9f0d8473a187f18f0fa&oe=60040BEA"
-            alt="Prakash image in finland"> -->
 
         <img class="about-feed-img"
             src="https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-0/p180x540/119468279_1821756824628923_4686802068951492315_o.jpg?_nc_cat=100&ccb=2&_nc_sid=e3f864&_nc_ohc=9nuNlFMIbeIAX8SaqaY&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=df6a708a5813d51905b7fb5706e4dbcd&oe=6005F292"
@@ -56,10 +78,16 @@
             alt=" Kjerag Bolten">
     </div>
 
+    <div class="quotes">
+        <h1> A LITTLE ABOUT ME : </h1>
+        <h3>"I am outgoing, energizing, resourceful, and goal-oriented. I face new challenges with a
+            great commitment and a willingness to seek the knowledge needed to find solutions. As your next
+            Full Stack Software Engineer, I want to contribute to new ideas and work purposefully to
+            contribute to the mission. I hope to introduce myself further."
+        </h3>
 
-    <div id="instagram-feed">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-b230557a-5f4a-48f9-910c-72c916b1cc25"></div>
     </div>
+
+
 
     <%-include ('../partials/footer.ejs') %>

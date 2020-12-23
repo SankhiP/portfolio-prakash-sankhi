@@ -5,13 +5,12 @@ body {
     margin: 0;
     background-color: lightgray;
     line-height: 1.9;
-    
 }
 
 /*Global */
 .container{
-    width: 80%;
-    margin: auto;
+    width: 95%;
+
 }
 
 ul {
@@ -21,49 +20,43 @@ ul {
 
 /* Header */
 header {
-
-    padding-top:30px;
-    min-height: 70px;
+     width: 100%;
     text-align: center;
-}
-
-header a{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    
-}
-
-header li{
-    display : inline;
-    padding : 0 20px 20px 0;
-}
-
-.active {
-    background: red;
+    padding: 20px;
 }
 
 
-/* header ul li.active a {
-    background : red;
-    color :white;
-} */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+}
 
-.topnav {
-    margin-bottom: 10px;
+ /*Style the active class (and buttons on mouse-over) */
+ 
+.active,
+.btn:hover {
+    color : blueviolet;
 }
 
 /* About Me */
 
-#about {
+#about-Img {
+width: 50%;
+min-height: 300px;
+float: right;
+border-radius: 50%;
+margin-top: 80px;
+margin-bottom: 50px;
+}
 
-    width: 80%;
-    background-image: url("https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-9/p843x403/35238958_2038784109526715_6404103770879295488_o.jpg?_nc_cat=100&ccb=2&_nc_sid=84a396&_nc_ohc=MlXE9P6KT6wAX_Kl1Bk&_nc_oc=AQnNIxXXLQUmsUwYiudcFJC0snqRyi2Ft4JmkJbd9TP06hv9ectO6GGD1hieob_F7-c&_nc_ht=scontent.fosl4-2.fna&tp=6&oh=7a9b8a60041be0e0091448013b6a7350&oe=5FFD1849") ;
-    background-repeat: no-repeat;
-    margin : 80px;
-    height : 500px;
-    border-radius: 50%;
+#about-text{
+    margin-top: 120px;
+    width: 50%;
+    float: left;
+    margin-bottom: 50px;
+
 }
 
 article {
@@ -79,7 +72,8 @@ article h2 {
 
 #about-inside {
  display: inline;
- margin-top : 30px;
+ margin-top : 100px;
+ 
 }
 
 #about-feed{
@@ -88,43 +82,121 @@ article h2 {
 }
 
 .about-feed-img{
-    width: 400px;
-    height: 400px;
+    width: 33%;
+    height: 80vh;
     margin:0;
     padding: 0;
 }
 #kings-road {
-    width : 40%;
-    margin-top: 150px;
+    width : 45%;
+    margin-top: 250px;
     float: left;
-    
-}
+    }
 
 #kings-road-aside {
     width : 50%;
     float: right;
     margin-top: 200px;
-    
-    
 }
-.container p {
+
+.about-head p {
     margin-top: 15px;
 }
 
 span #right{
     float: right;
 }
-/*Skills Sections */
 
+
+/*About Me Media Quries*/
+@media screen and (max-width : 700px) {
+
+.about-head {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#about-Img {
+    width: 90%;
+    min-height: 50vh;
+    border-radius: 50%;
+    margin : 5px;
+    padding: 0;
+    }
+
+#about-text {
+margin: 40px;
+width: 90%; 
+}
+
+#kings-road {
+width: 90%;
+margin-top: auto;
+}
+
+#kings-road-aside{
+    width: 90%;
+    margin-top: 10px;
+}
+#about-inside{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-feed{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-feed-img {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+   .quotes {
+    width: 50%;
+    margin-top : 20px;
+    text-align: right;
+    }
+}
+
+/*Skills Sections */
 .quotes {
+    width: 80%;
     margin-top : 200px;
+    margin-left: 100px;
     text-align: center;
 }
 
 #skill-services {
     margin-top: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
+
+
+/*Skills Section Media Quries */
+@media screen and (max-width : 700px) {
+
+    #skill-services {
+        margin-top: 200px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .quotes {
+   
+        margin-top: 20px;
+        margin-left: 30px;
+
+    }    
+
+}
+
+
 /*Experience Sections*/
 
 .main {
@@ -132,18 +204,17 @@ span #right{
 }
 
 #experience-text {
-    width: 60%;
+    width: 80%;
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-bottom: 100px;
     text-align: center;
-
 }
+
  .card-img-top{
     height:220px;
     width:290px;
     padding:5px;
-
 } 
 
  .card{
@@ -166,7 +237,33 @@ span #right{
     flex-direction: row;
     margin-top: 100px;
     margin-right: 50px;
-    
+    }
+
+
+/*Experience Media Quries */
+@media screen and (max-width : 700px) {
+
+    #experience-text{
+        width: 90%;
+        margin-top: 5px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+}
+
+/*Education Section*/
+
+/*Education Media Quries*/
+@media screen and (max-width:767px) {
+
+    .table {
+    height: 90%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font: x-small;
+    } 
 }
 
 /*Footer*/
@@ -178,7 +275,6 @@ footer {
     background-color:skyblue;
     position: relative;
     text-align: center;
-
 }
 
 #contact {
@@ -204,13 +300,11 @@ footer {
      }
 
  .fa-envelope,.fa-phone {
+  border-radius: 10%;
+  height: 40px;
+  padding: none;
+}
 
-color :white;
-background-color: black;
-border-radius: 10%;
-height : 40px;
-
-     }
 .contact-middle {
     display: flex;
     flex-direction: row;
@@ -226,6 +320,7 @@ height : 40px;
     flex-direction: column;
     text-align: left;
     margin-top: 40px;
+    
 }
 .contact-right {
     display: flex;
@@ -235,116 +330,72 @@ height : 40px;
 }
 
 
+/*Footer Media Quries */
+@media screen and (max-width : 700px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-@media (min-width:300px) and (max-width:600px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 135%;
-     }
-    
-.main-skills-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 15px;
-    padding: 15px;
-}
-
-.skill-logo {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    margin: 5px;
-    padding: 5px;
-}
-
-.skill-logo-basics {
-    display: flex;
+#contact {
+    margin-top:10px;
     flex-direction: column;
-    margin: 15px;
-    padding: 15px;
-} */
-
-
-/*Skills Setion*/
-
-/* .main {
-    height: 100%;
-    width: 100%;
-    margin:30px;
-    padding:10px;
-} */
-
-
-
-/* footer social media icon */
-
-
-@media (min-width:300px) and (max-width:600px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        height: 67%;
-    }
-
-    .contact-left,.contact-middle,.contact-right {
-      margin :auto;
-  }
-
-  .main {
-    height: 100%;
-    margin:0;
+}
+    
+.contact-left {
+    text-align: left;
+    margin-left : 1px;
+    margin-right: 20px;
     padding: 0;
-    }
+}
 
-  .table {
-      height: 90%;
-      width: 100%;
-      margin:0;
-      padding:0;
-      font: x-small;
-      }
-    } 
+ .contact-middle, .contact-right {
+      margin-left : 30px;
+      padding: 3px;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
