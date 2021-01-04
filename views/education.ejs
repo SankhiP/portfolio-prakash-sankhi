@@ -1,17 +1,28 @@
 <%-include ('../partials/navbar.ejs') %>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow-shadow" href="/"> ABOUT <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow-shadow" href="/skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow-shadow education active" href="/education">EDUCATION</a>
+                    </li>
 
-        <div class="container">
-            <nav class="topnav">
-                <ul>
-                    <a class="btn" href="/">About Me</a>
-                    <a class="btn" href="/skills">Skills</a>
-                    <a class="btn" href="/experiences">Experiences</a>
-                    <a class="btn active" href="/education">Education</a>
-
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow-shadow" href="/contact">CONTACT</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
 
