@@ -18,6 +18,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link hvr-grow-shadow" href="/resume">RESUME</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link hvr-grow-shadow active" href="/contact">CONTACT</a>
                     </li>
 
@@ -36,35 +40,39 @@
                 just be traveling through the middle of no-where. I'll get back to you as soon as possible. That's a
                 promise!"</h5>
         </article>
+
+
         <form>
             <div class="form-group hvr-float-shadow">
                 <label for="exampleInputEmail1">Name (required)</label>
                 <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name"
-                    required>
+                    autocomplete="off">
+                <span id="username" class="text-danger font-weight-bold"></span>
             </div>
             <br>
             <div class="form-group hvr-float-shadow">
-                <label for="exampleInputEmail1">Email address (required)</label>
+                <label for="exampleInputEmail1">Email (required)</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                    placeholder="Enter email" required>
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small> -->
+                    placeholder="Enter email" autocomplete="off">
+                <span id="emailAdress" class="text-danger font-weight-bold"></span>
             </div>
             <br>
 
             <div class="form-group hvr-float-shadow">
                 <label for="exampleInputEmail1"> Subject</label>
                 <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Subject"
-                    required>
+                    autocomplete="off">
+                <span id="contactSubject" class="text-danger font-weight-bold"></span>
             </div>
             <br>
             <div class="form-group hvr-float-shadow">
                 <label for="exampleInputPassword1"> Message</label>
-                <textarea class="form-control" id="text" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="text" placeholder="Message"></textarea>
+                <span id="message" class="text-danger font-weight-bold"></span>
             </div>
             <br>
 
-            <button type="submit" class="btn btn-primary hvr-float-shadow">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 

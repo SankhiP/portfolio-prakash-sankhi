@@ -282,7 +282,17 @@ footer {
     padding: 10px;
 }
 
+/*Resume Sections */
+.technology,.experiences-resume{
+     display: flex;
+     flex-direction: row;
+     margin-top: 100px;
+}
 
+.oslomet, .subisu, .vtu, .technology-skills {
+    margin: 20px;
+    width: 90%;
+}
 
 
 /*media Quries Sections 
@@ -423,8 +433,22 @@ for high resulation mobile devices */
 
     .contact-right {
         margin-left: 10%;
+   }
 
-    }
+   /*Resume Sections Media Quries*/
+   .technology,.experiences-resume{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+   .oslomet, .subisu, .vtu, .technology-skills {
+   margin: 5px;
+   width: 100%;
+   }
+
+   #link{
+       display: none;
+   }
 }
 
 

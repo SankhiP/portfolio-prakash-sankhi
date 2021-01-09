@@ -5,17 +5,18 @@ const port = process.env.PORT || 3000;
 const app = express();
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
+require('dotenv').config();
+
+console.log(process.env);
 const log = console.log;
 app.use(express.urlencoded({
     extended: false
 }));
 app.use(express.json());
 
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'))
 app.use('/public', express.static('public'));
-
 
 app.get('/', (req, res) => {
     res.render('aboutMe.ejs');
@@ -23,7 +24,6 @@ app.get('/', (req, res) => {
 
 app.get('/skills', (req, res) => {
     res.render('skills.ejs');
-
 })
 
 app.get('/experiences', (req, res) => {
@@ -32,6 +32,10 @@ app.get('/experiences', (req, res) => {
 
 app.get('/education', (req, res) => {
     res.render('education.ejs');
+})
+
+app.get('/resume', (req, res) => {
+    res.render('resume.ejs');
 })
 
 app.get('/contact', (req, res) => {
